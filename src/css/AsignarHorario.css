@@ -1,0 +1,54 @@
+/* AsignarHorario.css */
+
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del formulario */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de los selects y botones */
+select, button {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilos del botón 'Ver Horario' */
+#btnHorario {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+#btnHorario:hover {
+  background-color: #45a049;
+}
+
+/* Estilos del botón 'Agregar' */
+#agregar {
+  background-color: #008CBA;
+  color: #fff;
+  cursor: pointer;
+}
+
+#agregar:hover {
+  background-color: #007399;
+}
+
+/* Estilos del navbar */
+/* Asegúrate de que NavbarProfesor.css tenga estilos para el navbar */
+
+/* Otros estilos específicos si es necesario */
+/* Puedes agregar estilos específicos para componentes o elementos específicos aquí */
