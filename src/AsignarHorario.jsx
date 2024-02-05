@@ -2,7 +2,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { NavbarProfesor } from "./NavbarProfesor";
 import { useEffect, useState } from "react";
 import * as API from './api/data'
-import './css/AsignarHorario.css'
+
 
 export function AsignarHorario() {
     const params = useParams();

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import {NavbarAdmin} from './NavbarAdmin';
 import * as API from './api/data';
 import { Link } from 'react-router-dom';
-import './css/ListaProfesores.css'
+
 
 export function ListaProfesores() {
     const [profesores, setProfesores] = useState([]);

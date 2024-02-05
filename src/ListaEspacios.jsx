@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { NavbarAdmin } from "./NavbarAdmin";
 import * as API from './api/data';
 import { Link } from "react-router-dom";
-import './css/ListaEspacios.css'
+
 export function ListaEspacios(){
     const [nuevoEspacio, setNuevoEspacio] = useState([{"id":"","descripcion":"","capacidad":""}]);
     const [espacios, setEspacios] = useState([]);

@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./css/NavbarAdmin.css";
+import './css/styles.css'
+
 
 export function NavbarAdmin() {
   const navigate = useNavigate();
@@ -15,11 +16,11 @@ export function NavbarAdmin() {
   }
 
   return (
-    <nav>
-      <span onClick={() => handleNavigate("/listaCursos")}>Cursos</span>
-      <span onClick={() => handleNavigate("/listaProfesores")}>Profesores</span>
-      <span onClick={() => handleNavigate("/listaEspacios")}>Espacios</span>
-      <span id="cerrar-sesion" onClick={() => cerrarSesion()}>
+    <nav className="main__navbar">
+      <span className="navbar__option" onClick={() => handleNavigate("/listaCursos")}>Cursos</span>
+      <span className="navbar__option" onClick={() => handleNavigate("/listaProfesores")}>Profesores</span>
+      <span className="navbar__option" onClick={() => handleNavigate("/listaEspacios")}>Espacios</span>
+      <span className="navbar__unlogin" id="cerrar-sesion" onClick={() => cerrarSesion()}>
         Cerrar sesión
       </span>
     </nav>

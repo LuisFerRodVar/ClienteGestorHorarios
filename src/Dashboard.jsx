@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { NavbarProfesor } from "./NavbarProfesor";
 import * as API from './api/data';
-import './css/Dashboard.css'
+
 export function Dashboard() {
     const horas = ["7:00 - 7:50",
     "8:00 - 8:50",
@@ -77,7 +77,7 @@ export function Dashboard() {
                 <tbody>
                     {celdas.map((fila, index) => (
                         <tr key={index}>
-                            <td>{horas[index]}</td>
+                            <th>{horas[index]}</th>
                             {fila.map((celda, celdaIndex) => (
                                 <td key={celdaIndex}>{celda}</td>
                             ))}

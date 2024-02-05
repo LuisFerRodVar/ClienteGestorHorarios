@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import * as API from "./api/data";
 import { NavbarAdmin } from "./NavbarAdmin";
-import './css/EditarProfesor.css'
+
 
 export function EditarProfesor(){
     const params = useParams();

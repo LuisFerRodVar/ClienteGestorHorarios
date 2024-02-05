@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { NavbarAdmin } from "./NavbarAdmin"
 import * as API from './api/data'
 import { useParams } from "react-router-dom";
-import './css/EditarEspacio.css'
+
 export function EditarEspacio(){
     const params = useParams();
     const id = params.idEspacio;

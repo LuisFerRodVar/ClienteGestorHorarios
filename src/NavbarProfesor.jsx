@@ -1,16 +1,20 @@
 import { Link, useNavigate } from "react-router-dom";
-import './css/NavbarAdmin.css'
-export function NavbarProfesor(){
+
+export function NavbarProfesor() {
     const navigate = useNavigate();
-    function cerrarSesion(){
+    function cerrarSesion() {
         sessionStorage.removeItem('usuario');
         navigate('/');
     }
-    return(
+    return (
         <>
-            <Link to={'/dashboard'}><span>Horario</span></Link>
-            <Link to={'/listaGrupos'}><span>Grupos</span></Link>
-            <span onClick={() => cerrarSesion()}>Cerrar sesion</span>
+            <nav className="main__navbar">
+                <Link to={'/dashboard'}><span className="navbar__option" >Horario</span></Link>
+                <Link to={'/listaGrupos'}><span className="navbar__option">Grupos</span></Link>
+                <span className="navbar__unlogin" onClick={() => cerrarSesion()}>Cerrar sesion</span>
+
+            </nav>
+
         </>
     )
 }

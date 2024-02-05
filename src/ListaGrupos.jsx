@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { NavbarProfesor } from "./NavbarProfesor";
 import * as API from './api/data'
 import { Link } from "react-router-dom";
-import './css/ListaGrupos.css'
+
 export function ListaGrupos() {
     const [grupos, setGrupos] = useState([]);
     useEffect(() => {
@@ -11,16 +11,16 @@ export function ListaGrupos() {
     return (
         <>
             <NavbarProfesor />
-            <table>
-                <thead>
-                    <tr>
-                        <td>Curso</td>
-                        <td>Grupo</td>
-                        <td></td>
+            <table className="main__table">
+                <thead className="table__header">
+                    <tr className="header__row">
+                        <td className="header__square">Curso</td>
+                        <td className="header__square">Grupo</td>
+                        <td className="header__invisible"></td>
                     </tr>
 
                 </thead>
-                <tbody>
+                <tbody className="table__body">
                     {
                         grupos?.map(grupo => {
                             return (
